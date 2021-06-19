@@ -1,10 +1,1 @@
-Could not find file 'C:\Users\hosam\source\repos\WinFormsApp2\bin\Debug\netcoreapp3.1\ez.txt'.
-   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
-   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
-   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
-   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
-   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks)
-   at System.IO.File.InternalReadAllText(String path, Encoding encoding)
-   at System.IO.File.ReadAllText(String path)
-   at WinFormsApp2.Form1.encrypt_Click(Object sender, EventArgs e) in C:\Users\hosam\source\repos\WinFormsApp2\Form1.cs:line 71
-Link for advanced users (might not always be there): 
+look i cant keep this folder empty just compile do your stuff and come back to me with actual files
