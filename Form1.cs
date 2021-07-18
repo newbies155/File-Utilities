@@ -14,7 +14,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WinFormsApp1
+namespace FileUtilities
 {
     public partial class Form1 : Form
     {
