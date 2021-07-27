@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -46,6 +46,7 @@ namespace WinFormsApp2
                 } else if (arg == "OPTIN")
                 {
                     collectData = true;
+                    MessageBox.Show("Data collection does not work yet, we are working on it!", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 } else if (arg == "LOCATION")
                 {
                     locationFromArgs = Environment.GetCommandLineArgs()[counter + 1];
@@ -56,8 +57,8 @@ namespace WinFormsApp2
 
         private void encrypt_Click(object sender, EventArgs e)
         {
-            /*try
-            {*/
+            try
+            {
                 if (textBox1.Text == "")
                 {
                     encryptor = aes.CreateEncryptor();
@@ -97,7 +98,7 @@ namespace WinFormsApp2
                 else
                 {
                     MessageBox.Show("Encrypted file successfully!", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }/*
+                }
             }
             catch (Exception ex)
             {
@@ -118,7 +119,7 @@ namespace WinFormsApp2
                     MessageBox.Show("Invalid key, Maybe try checking to see if the encryption type is correct?", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 File.WriteAllText("log.txt", ex.Data + "\nLink for advanced users (might not always be there): " + ex.HelpLink);
-            }*/
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
