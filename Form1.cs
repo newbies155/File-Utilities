@@ -1,4 +1,4 @@
-﻿using Microsoft.Win32;
+using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -45,7 +45,7 @@ namespace WinFormsApp1
             }
             if (checkBox1.Checked)
             {
-                process.StartInfo.Arguments += " " + "FLATMODE";
+                process.StartInfo.Arguments += "FLATMODE";
             }
             if (checkBox2.Checked)
             {
@@ -64,7 +64,7 @@ namespace WinFormsApp1
         {
             if (checkBox2.Checked)
             {
-                label4.Text = "You are currently opted-in to data collection, The data collected will be logged to data.log.";
+                label4.Text = "You are currently opted-in to data collection.";
             } else
             {
                 label4.Text = "You are currently not opted-in to data collection";
